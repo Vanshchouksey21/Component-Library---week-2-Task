@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Buttons Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+      <header>
+      <h1>My Component Library</h1>
+  <p>A collection of polished UI cards and layouts</p>
+  <p >
+    Buttons are one of the most essential UI elements. They trigger actions, 
+    guide users through a flow, and help make interfaces interactive. 
+    In this library, buttons are designed to be clean, responsive, and easy 
+    to reuse across different projects.
+  </p>
+      <a href="../index.html">View Full Index Page</a>
+    </header>
+
+    <!-- Basic Buttons -->
+     <main>
+    <section>
+      <h2>Basic Buttons</h2>
+      <p>Primary, Default, Dashed, Text, Link, Black buttons</p>
+      <div class="CONTAINER">
+        <button class="button-1">Primary</button>
+        <button class="button-2">Default</button>
+        <button class="button-3">Dashed</button>
+        <button class="button-4">Text</button>
+        <button class="button-5">Link</button>
+        <button class="button-6">Black</button>
+      </div>
+    </section>
+
+    <!-- Icon / Circle Buttons -->
+    <section>
+      <h2>Icon / Circle Buttons</h2>
+      <div class="CONTAINER">
+        <button class="button-circle">
+          <i class="fa-brands fa-searchengin"></i>
+        </button>
+        <button class="button-circle-trans">
+          <i class="fa-brands fa-searchengin"></i>
+        </button>
+        <button class="button-circle-trans-dot">
+          <i class="fa-brands fa-searchengin"></i>
+        </button>
+        <button class="button-circle-trans-sq">
+          <i class="fa-brands fa-searchengin"></i>
+        </button>
+        <button class="button-2-icon">
+          <i class="fa-brands fa-searchengin"></i> Button 2
+        </button>
+      </div>
+    </section>
+
+    <!-- Button Sizes -->
+    <section>
+      <h2>Button Sizes</h2>
+      <div class="btn-size-controls">
+        <input type="radio" name="btn-size" id="small" />
+        <label for="small">Small</label>
+        <input type="radio" name="btn-size" id="default" checked />
+        <label for="default">Default</label>
+        <input type="radio" name="btn-size" id="large" />
+        <label for="large">Large</label>
+
+        <div class="preview">
+          <button class="btn button-1">Primary</button>
+          <button class="btn button-2">Default</button>
+          <button class="btn button-3">Dashed</button>
+          <button class="btn button-4">Text</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disabled Buttons -->
+    <section>
+      <h2>Disabled Buttons</h2>
+      <div class="CONTAINER">
+        <button class="button-1" disabled>Primary (disabled)</button>
+        <button class="button-2" disabled>Default (disabled)</button>
+        <button class="button-3" disabled>Dashed (disabled)</button>
+        <button class="button-4" disabled>Text (disabled)</button>
+        <button class="button-5" disabled>Link (disabled)</button>
+      </div>
+    </section>
+
+    <!-- Danger Buttons -->
+    <section>
+      <h2>Danger Buttons</h2>
+      <div class="CONTAINER">
+        <button class="red-1">Primary</button>
+        <button class="red-2">Default</button>
+        <button class="red-3">Dashed</button>
+      </div>
+    </section>
+
+    <!-- Loading Button -->
+    <section>
+      <h2>Loading Button (CSS Only)</h2>
+      <p>Click checkbox to show spinner instead of icon</p>
+
+      <label class="button-1 btn-loading">
+        <input type="checkbox" class="btn-check" />
+        <span class="icon-wrapper">
+          <i class="fa-solid fa-power-off"></i>
+          <span class="spinner"></span>
+        </span>
+        <span class="btn-text">Loading</span>
+      </label>
+
+      <label class="icon-btn">
+        <input type="checkbox" class="btn-check" />
+        <i class="fa-solid fa-power-off"></i>
+        <span class="spinner-2"></span>
+      </label>
+    </section>
+
+    <!-- Ghost Buttons -->
+    <section>
+      <h2>Ghost Buttons</h2>
+      <div class="CONTAINER">
+        <button class="ghost">Primary</button>
+        <button class="ghost button-2">Default</button>
+        <button class="ghost button-3">Dashed</button>
+      </div>
+    </section>
+
+    <!-- Round Buttons -->
+    <section>
+      <h2>Round Buttons</h2>
+      <div class="CONTAINER">
+        <button class="button-1 round">Primary</button>
+        <button class="button-2 round">Default</button>
+        <button class="button-3 round">Dashed</button>
+      </div>
+    </section>
+
+    <!-- Block Buttons -->
+    <section>
+      <h2>Block Buttons</h2>
+      <div class="CONTAINER" style="flex-direction: column">
+        <button class="button-1 block">Primary</button>
+        <button class="button-2 block">Default</button>
+        <button class="button-3 block">Dashed</button>
+      </div>
+    </section>
+    </main>
+
+         <footer>
+    <div>
+  <p>&copy; 2025 My Component Library. All rights reserved.</p>
+
+    </div>
+</footer>
+  </body>
+</html>

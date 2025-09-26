@@ -1,0 +1,468 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1677FF;
+  --primary-hover: #1e6edf;
+  --secondary-color: gray;
+  --secondary-hover: #1e6edf;
+  --outline-color: gray;
+  --outline-hover: #1677FF;
+  --text-color: #333;
+  --text-hover-bg: #f0f0f0;
+  --link-color: #3170C0;
+  --link-hover: #2F04C3;
+  --black: #000;
+  --white: #fff;
+  --danger: #FF4D4D;
+  --shadow: rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #1e293b;
+}
+
+header p {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 8px 0 16px;
+  max-width: 700px;
+}
+
+header a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+header a:hover {
+  background: #1d4ed8;
+}
+
+section {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+section p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.CONTAINER {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn,
+button {
+  padding: 6px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.button-1 {
+  color: #fff;
+  background: linear-gradient(135deg, #1677FF, #4D9CFF);
+  border: none;
+}
+
+.button-1:hover {
+  background: linear-gradient(135deg, #1e6edf, #3b89ff);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.button-2 {
+  color: #000;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+}
+
+.button-2:hover {
+  color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
+  transform: translateY(-2px);
+}
+
+.button-3 {
+  color: #000;
+  background: transparent;
+  border: 1px dashed var(--outline-color);
+}
+
+.button-3:hover {
+  color: var(--outline-hover);
+  border-color: var(--outline-hover);
+  transform: translateY(-2px);
+}
+
+.button-4 {
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+}
+
+.button-4:hover {
+  background: var(--text-hover-bg);
+  transform: translateY(-2px);
+}
+
+.button-5 {
+  color: var(--link-color);
+  background: transparent;
+  border: none;
+}
+
+.button-5:hover {
+  color: var(--link-hover);
+  transform: translateY(-2px);
+}
+
+.button-6 {
+  color: #fff;
+  background: #000;
+  border: none;
+}
+
+.button-6:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+.button-circle,
+.button-circle-trans,
+.button-circle-trans-dot,
+.button-circle-trans-sq {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-circle {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.button-circle:hover {
+  box-shadow: 0 4px 12px var(--shadow);
+  transform: scale(1.1);
+}
+
+.button-circle-trans {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button-circle-trans:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.button-circle-trans-dot {
+  background: transparent;
+  color: #000;
+  border: 1px dotted #000;
+}
+
+.button-circle-trans-dot:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.button-circle-trans-sq {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.button-circle-trans-sq:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.button-2-icon {
+  color: #000;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+}
+
+.button-2-icon:hover {
+  color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.red-1 {
+  background: var(--danger);
+  color: #fff;
+  border: none;
+}
+
+.red-1:hover {
+  background: #FF3333;
+  transform: translateY(-2px);
+}
+
+.red-2 {
+  background: transparent;
+  color: #000;
+  border: 1px solid var(--secondary-color);
+}
+
+.red-2:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+  transform: translateY(-2px);
+}
+
+.red-3 {
+  background: transparent;
+  color: #000;
+  border: 1px dotted var(--secondary-color);
+}
+
+.red-3:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+  transform: translateY(-2px);
+}
+
+.btn-size-controls input[type=radio] {
+  display: none;
+}
+
+.btn-size-controls label {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all 0.3s;
+  color: var(--primary-color);
+  background: #fff;
+}
+
+.btn-size-controls label:hover {
+  background: #e6f0ff;
+}
+
+.btn-size-controls input[type=radio]:checked + label {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#small:checked ~ .preview .btn {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+#default:checked ~ .preview .btn {
+  padding: 6px 14px;
+  font-size: 16px;
+}
+
+#large:checked ~ .preview .btn {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.btn-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #1677FF, #4D9CFF);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  width: 16px; /* icon width */
+  height: 16px; /* icon height */
+}
+
+.icon-wrapper i {
+  display: block;
+}
+
+.btn-check {
+  display: none;
+}
+
+.spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-check:checked ~ .icon-wrapper i {
+  display: none;
+}
+
+.btn-check:checked ~ .icon-wrapper .spinner {
+  display: block;
+}
+
+.spinner-2 {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-check:checked ~ i {
+  display: none;
+}
+
+.btn-check:checked ~ .spinner-2 {
+  display: inline-block;
+}
+
+.icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 35px;
+  background: #1677FF;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 20px;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.ghost:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.round {
+  border-radius: 50px;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #7096bd;
+  color: #475569;
+  font-size: 14px;
+  border-top: 1px solid #e2e8f0;
+}/*# sourceMappingURL=style.css.map */
