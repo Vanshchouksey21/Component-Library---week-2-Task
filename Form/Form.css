@@ -1,3 +1,4 @@
+/* ================== Global Reset ================== */
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #f0f2f5;
+  color: #1e293b;
 }
 
+/* ================== Header ================== */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -19,7 +23,7 @@ header {
 
 header h1 {
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 10px;
   color: #1e293b;
 }
 
@@ -45,163 +49,134 @@ header a:hover {
   background: #1d4ed8;
 }
 
+/* ================== Form Card Base ================== */
 form {
-  background: white;
-  padding: 20px 30px;
-  border-radius: 8px;
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 10px;
   border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   width: 500px;
-  margin: 50px;
-}
-
-.form-1 {
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.form-1 div {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
 label {
-  margin-bottom: 5px;
   font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+select,
+textarea {
+  width: 100%;
   padding: 8px 10px;
+  margin-top: 4px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-input[type=checkbox] {
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: auto;
   margin-right: 8px;
 }
 
-button {
-  background: #1677ff;
-  color: white;
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  padding: 10px 16px;
   border: none;
-  padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #4caf50;
+  transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #0f5ed7;
+button:hover,
+input[type=submit]:hover,
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #f44336;
+}
+
+input[type=reset]:hover {
+  background-color: #da190b;
+}
+
+/* ================== Form Specific Classes ================== */
+.form-1 div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .date-form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  justify-content: center;
+  gap: 10px;
 }
 
-.my-form {
-  background: #fff;
-  padding: 30px 50px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.form-input {
+.my-form,
+.my-form-3,
+.rf-form,
+.allform {
   width: 100%;
-  padding: 8px 10px;
-  margin-top: 4px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
 }
 
-.btn {
-  padding: 8px 15px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.submit-btn {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.reset-btn {
-  background-color: #f44336;
-  color: white;
-}
-
+.my-form,
 .my-form-3 {
-  background: #fff;
-  padding: 30px 50px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  font-family: Arial, sans-serif;
+  padding: 30px 40px;
 }
 
-.form-label-3 {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.form-input-1, .form-input-2 {
-  width: 100%;
-  padding: 8px 10px;
-  margin-top: 4px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn-3 {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: not-allowed;
-  background: #aaa;
-  color: #fff;
+.my-form-3 input:required {
+  border-color: #ccc;
 }
 
 .my-form-3:has(.form-input-1:valid):has(.form-input-2:valid) .submit-btn-3 {
-  background: #4CAF50;
+  background-color: #4caf50;
   cursor: pointer;
 }
 
 .rf-container {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .rf-form {
-  background: #fff;
-  padding: 20px 30px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  padding: 25px 30px;
+  border-radius: 10px;
   width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: #fff;
 }
 
 .rf-form h2 {
@@ -210,8 +185,8 @@ button {
 }
 
 .rf-question {
-  margin: 15px 0 8px;
   font-weight: bold;
+  margin: 15px 0 8px;
 }
 
 .rf-option {
@@ -228,31 +203,34 @@ button {
   margin-top: 15px;
   width: 100%;
   padding: 10px;
-  border: none;
-  background: #4CAF50;
-  color: white;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 6px;
+  background: #4caf50;
 }
 
 .rf-btn:hover {
   background: #45a049;
 }
 
+/* ================== All Input Types Form ================== */
 .allform-container {
-  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
   padding: 20px;
-  background: #f4f6f9;
+}
+
+.allform-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
 }
 
 .allform {
-  max-width: 650px;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: #fff;
 }
 
 .allform-group {
@@ -270,8 +248,8 @@ button {
 .allform-textarea {
   width: 100%;
   padding: 8px;
+  border-radius: 6px;
   border: 1px solid #bbb;
-  border-radius: 5px;
 }
 
 .allform-input[type=color],
@@ -281,15 +259,11 @@ button {
   width: auto;
 }
 
-.allform-textarea {
-  min-height: 80px;
-  resize: vertical;
-}
-
 .allform-progress,
 .allform-meter {
   width: 100%;
   height: 20px;
+  margin-top: 6px;
 }
 
 .allform-actions {
@@ -299,34 +273,34 @@ button {
 }
 
 .allform-btn {
-  padding: 8px 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 .allform-btn-submit {
-  background: #4caf50;
-  color: #fff;
+  background-color: #4caf50;
 }
 
 .allform-btn-reset {
-  background: #f44336;
-  color: #fff;
+  background-color: #f44336;
 }
 
 .allform-btn-normal {
-  background: #2196f3;
-  color: #fff;
+  background-color: #2196f3;
 }
 
+/* ================== Footer ================== */
 footer {
   width: 100%;
-  margin-top: 40px;
   padding: 20px;
   text-align: center;
   background: #7096bd;
-  color: #475569;
+  color: #fff;
   font-size: 14px;
   border-top: 1px solid #e2e8f0;
+  margin-top: 40px;
 }/*# sourceMappingURL=Form.css.map */

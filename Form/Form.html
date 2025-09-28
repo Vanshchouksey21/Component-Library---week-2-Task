@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./Form.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./Form.css" />
+</head>
+<body>
 
-    <header>
+<header>
   <h1>My Component Library</h1>
   <p>A collection of polished UI cards and layouts</p>
   <p>
@@ -19,369 +19,266 @@
   <a href="../index.html">View Full Index Page</a>
 </header>
 
+<section class="form-container">
 
-
-    <section class="form-container">
-
-      <!-- 1 -->
-      <form>
-        <div class="form-1">
-          <div>
-            <label> Username</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label> Password </label>
-            <input type="text" />
-          </div>
-          <div>
-            <input type="checkbox" id="remember" />
-            <label for="remember"> Remember Me </label>
-          </div>
-          <div>
-            <button>Submit</button>
-          </div>
-        </div>
-      </form>
-      
-      <!-- 2 -->
-      <form>
-        <div class="date-form">
-          <div>
-            <label for="date">Select Date:</label>
-            <input type="date" id="date" name="date" required />
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </div>
-      </form>
-    <!-- 3 -->
-
-    <form>
+  <!-- 1 -->
+  <p class="form-desc">Basic login form with username, password and remember me option.</p>
+  <form>
+    <div class="form-1">
       <div>
+        <label> Username</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label> Password </label>
+        <input type="text" />
+      </div>
+      <div>
+        <input type="checkbox" id="remember" />
+        <label for="remember"> Remember Me </label>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </div>
+  </form>
+  
+  <!-- 2 -->
+  <p class="form-desc">Date selection form with calendar input.</p>
+  <form>
+    <div class="date-form">
+      <div>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- 3 -->
+  <p class="form-desc">Form with text input and gender dropdown.</p>
+  <form>
+    <div>
+      <div>
+        <label>Note</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">--------</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
         <div>
-          <label>Note</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label for="gender">Gender:</label>
-          <select id="gender" name="gender">
-            <option value="">--------</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
+          <button type="submit">Submit</button>
         </div>
       </div>
-    </form>
-    
-    <!-- 4 -->
-    
-    <form class="my-form">
-      <label class="form-label">
-        Name:
-        <input type="text" class="form-input" placeholder="Enter your name" />
-      </label>
-      
-      <label class="form-label">
-        Password:
-        <input
-        type="password"
-          class="form-input"
-          placeholder="Enter password"
-          />
-        </label>
-        
-        <button type="submit" class="btn submit-btn">Submit</button>
-        <button type="reset" class="btn reset-btn">Reset</button>
-      </form>
-      
-      <!-- 5 -->
-      <form class="my-form-3">
-      <label class="form-label-3">
-        Email:
-        <input
-        type="email"
-        class="form-input-1"
-        placeholder="Enter your name"
-        required
-        />
-      </label>
-      
-      <label class="form-label-3">
-        Password:
-        <input
-        type="password"
-        class="form-input-2"
-        placeholder="Enter password"
-        required
-        />
-      </label>
-      
-      <button type="submit" class="btn-3 submit-btn-3">Submit</button>
-    </form>
-    
-    <!-- 6 -->
-    
-    <div class="rf-container">
-      <form class="rf-form">
-        <h2>Simple Radio Form</h2>
-        
-        <!-- Question 1 -->
-        <p class="rf-question">1. Select your Gender:</p>
-        <label class="rf-option"
-        ><input type="radio" name="gender" value="male" /> Male</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="gender" value="female" /> Female</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="gender" value="other" /> Other</label
-        >
-        
-        <!-- Question 2 -->
-        <p class="rf-question">2. Preferred Contact:</p>
-        <label class="rf-option"
-        ><input type="radio" name="contact" value="email" /> Email</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="contact" value="phone" /> Phone</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="contact" value="whatsapp" />
-        WhatsApp</label
-        >
-        
-        <!-- Question 3 -->
-        <p class="rf-question">3. Subscription Plan:</p>
-        <label class="rf-option"
-        ><input type="radio" name="plan" value="free" /> Free</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="plan" value="standard" /> Standard</label
-        >
-        <label class="rf-option"
-        ><input type="radio" name="plan" value="premium" /> Premium</label
-        >
-        
-        <!-- Submit -->
-        <button type="submit" class="rf-btn">Submit</button>
-      </form>
     </div>
-    
-    <!-- 7th or maybe last  -->
-    
-    <div class="allform-container">
-      <h2>All Input Types Form (with Textarea, Select & Progress)</h2>
-      
-      <form class="allform">
-        <!-- Basic Inputs -->
-        <div class="allform-group">
-              <label class="allform-label">Text</label>
-              <input
-              type="text"
-                class="allform-input"
-                placeholder="Enter text"
-                />
-              </div>
-              
-              <div class="allform-group">
-                <label class="allform-label">Password</label>
-                <input
-                type="password"
-                class="allform-input"
-                placeholder="Enter password"
-                />
-              </div>
-              
-            <div class="allform-group">
-              <label class="allform-label">Email</label>
-              <input
-              type="email"
-                class="allform-input"
-                placeholder="Enter email"
-                />
-              </div>
-              
-              <div class="allform-group">
-                <label class="allform-label">Number</label>
-                <input
-                type="number"
-                class="allform-input"
-                min="1"
-                max="100"
-                value="10"
-                />
-              </div>
-              
-              <div class="allform-group">
-                <label class="allform-label">Tel</label>
-                <input
-                type="tel"
-                class="allform-input"
-                placeholder="Enter phone"
-              />
-            </div>
-            
-            <div class="allform-group">
-              <label class="allform-label">URL</label>
-              <input
-              type="url"
-              class="allform-input"
-              placeholder="https://example.com"
-              />
-            </div>
-            
-            <div class="allform-group">
-              <label class="allform-label">Search</label>
-              <input
-              type="search"
-              class="allform-input"
-              placeholder="Search here"
-              />
-            </div>
-            
-            <!-- Date & Time -->
-            <div class="allform-group">
-              <label class="allform-label">Date</label
-                ><input type="date" class="allform-input" />
-              </div>
-              <div class="allform-group">
-                <label class="allform-label">Time</label
-              ><input type="time" class="allform-input" />
-            </div>
-            <div class="allform-group">
-              <label class="allform-label">Datetime-Local</label
-                ><input type="datetime-local" class="allform-input" />
-              </div>
-            <div class="allform-group">
-              <label class="allform-label">Month</label
-                ><input type="month" class="allform-input" />
-              </div>
-              <div class="allform-group">
-                <label class="allform-label">Week</label
-                  ><input type="week" class="allform-input" />
-                </div>
-                
-                <!-- Pickers -->
-                <div class="allform-group">
-                  <label class="allform-label">Color</label
-                    ><input type="color" class="allform-input" value="#ff0000" />
-                  </div>
-                  <div class="allform-group">
-                    <label class="allform-label">Range</label
-                      ><input
-                      type="range"
-                      class="allform-input"
-                      min="0"
-                      max="100"
-                      value="50"
-                      />
-                    </div>
-                    <div class="allform-group">
-                      <label class="allform-label">File</label
-                        ><input type="file" class="allform-input" />
-                      </div>
-                      
-                      <!-- Choices -->
-                      <div class="allform-group">
-                        <label class="allform-label">Checkbox</label>
-                        <input type="checkbox" class="allform-input" /> I agree
-                      </div>
-                      <div class="allform-group">
-                        <label class="allform-label">Radio</label>
-                        <input type="radio" class="allform-input" name="choice" /> Option
-                        1
-                        <input type="radio" class="allform-input" name="choice" /> Option
-                        2
-                      </div>
+  </form>
 
-                      <!-- Hidden -->
-                      <div class="allform-group">
-                        <label class="allform-label">Hidden (not visible)</label>
-                        <input type="hidden" class="allform-input" value="12345" />
-                      </div>
-                      
-            <!-- Extra Elements -->
-            <div class="allform-group">
-              <label class="allform-label">Textarea (Multiline Textbox)</label>
-              <textarea
-              class="allform-textarea"
-                placeholder="Write your message here..."
-                ></textarea>
-              </div>
-              
-              <div class="allform-group">
-                <label class="allform-label">Select (Dropdown)</label>
-              <select class="allform-select">
-                <option value="">-- Choose an option --</option>
-                <option value="opt1">Option 1</option>
-                <option value="opt2">Option 2</option>
-                <option value="opt3">Option 3</option>
-              </select>
-            </div>
-            
-            <!-- Progress & Meter -->
-            <div class="allform-group">
-              <label class="allform-label">Form Completion (Progress)</label>
-              <progress
-              class="allform-progress"
-              value="40"
-              max="100"
-              ></progress>
-            </div>
-            
-            <div class="allform-group">
-              <label class="allform-label">Password Strength (Meter)</label>
-              <meter class="allform-meter" value="0.6" min="0" max="1">
-                60%
-              </meter>
-            </div>
-            
-            <!-- Image Button -->
-            <div class="allform-group">
-              <label class="allform-label">Image (acts like submit)</label>
-              <input
-                type="image"
-                class="allform-input"
-                src="https://via.placeholder.com/80"
-                alt="submit"
-                />
-              </div>
-              
-              <!-- Buttons -->
-              <div class="allform-actions">
-                <input
-                type="button"
-                class="allform-btn allform-btn-normal"
-                value="Normal Button"
-                />
-                <input
-                type="reset"
-                class="allform-btn allform-btn-reset"
-                value="Reset"
-                />
-                <input
-                type="submit"
-                class="allform-btn allform-btn-submit"
-                value="Submit"
-                />
-              </div>
-            </form>
-          </div>
-          
-        </section>
-          
-          <footer>
-            <div>
-              <p>&copy; 2025 My Component Library. All rights reserved.</p>
-              
-            </div>
-          </footer>
-          
-  </body>
+  <!-- 4 -->
+  <p class="form-desc">Form with name and password fields.</p>
+  <form class="my-form">
+    <label class="form-label">
+      Name:
+      <input type="text" class="form-input" placeholder="Enter your name" />
+    </label>
+    
+    <label class="form-label">
+      Password:
+      <input type="password" class="form-input" placeholder="Enter password" />
+    </label>
+    
+    <button type="submit" class="btn submit-btn">Submit</button>
+    <button type="reset" class="btn reset-btn">Reset</button>
+  </form>
+
+  <!-- 5 -->
+  <p class="form-desc">Email & password form with validation.</p>
+  <form class="my-form-3">
+    <label class="form-label-3">
+      Email:
+      <input type="email" class="form-input-1" placeholder="Enter your email" required />
+    </label>
+    
+    <label class="form-label-3">
+      Password:
+      <input type="password" class="form-input-2" placeholder="Enter password" required />
+    </label>
+    
+    <button type="submit" class="btn-3 submit-btn-3">Submit</button>
+  </form>
+
+  <!-- 6 -->
+  <p class="form-desc">Radio button form with multiple questions.</p>
+  <div class="rf-container">
+    <form class="rf-form">
+      <h2>Simple Radio Form</h2>
+      <p class="rf-question">1. Select your Gender:</p>
+      <label class="rf-option"><input type="radio" name="gender" value="male" /> Male</label>
+      <label class="rf-option"><input type="radio" name="gender" value="female" /> Female</label>
+      <label class="rf-option"><input type="radio" name="gender" value="other" /> Other</label>
+
+      <p class="rf-question">2. Preferred Contact:</p>
+      <label class="rf-option"><input type="radio" name="contact" value="email" /> Email</label>
+      <label class="rf-option"><input type="radio" name="contact" value="phone" /> Phone</label>
+      <label class="rf-option"><input type="radio" name="contact" value="whatsapp" /> WhatsApp</label>
+
+      <p class="rf-question">3. Subscription Plan:</p>
+      <label class="rf-option"><input type="radio" name="plan" value="free" /> Free</label>
+      <label class="rf-option"><input type="radio" name="plan" value="standard" /> Standard</label>
+      <label class="rf-option"><input type="radio" name="plan" value="premium" /> Premium</label>
+
+      <button type="submit" class="rf-btn">Submit</button>
+    </form>
+  </div>
+
+  <!-- 7 -->
+  <p class="form-desc">Form covering all input types like text, date, range, color, file, textarea, select, progress & meter.</p>
+  <div class="allform-container">
+    <h2>All Input Types Form (with Textarea, Select & Progress)</h2>
+    <form class="allform">
+      <div class="allform-group">
+        <label class="allform-label">Text</label>
+        <input type="text" class="allform-input" placeholder="Enter text" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Password</label>
+        <input type="password" class="allform-input" placeholder="Enter password" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Email</label>
+        <input type="email" class="allform-input" placeholder="Enter email" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Number</label>
+        <input type="number" class="allform-input" min="1" max="100" value="10" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Tel</label>
+        <input type="tel" class="allform-input" placeholder="Enter phone" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">URL</label>
+        <input type="url" class="allform-input" placeholder="https://example.com" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Search</label>
+        <input type="search" class="allform-input" placeholder="Search here" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Date</label>
+        <input type="date" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Time</label>
+        <input type="time" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Datetime-Local</label>
+        <input type="datetime-local" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Month</label>
+        <input type="month" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Week</label>
+        <input type="week" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Color</label>
+        <input type="color" class="allform-input" value="#ff0000" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Range</label>
+        <input type="range" class="allform-input" min="0" max="100" value="50" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">File</label>
+        <input type="file" class="allform-input" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Checkbox</label>
+        <input type="checkbox" class="allform-input" /> I agree
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Radio</label>
+        <input type="radio" class="allform-input" name="choice" /> Option 1
+        <input type="radio" class="allform-input" name="choice" /> Option 2
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Hidden (not visible)</label>
+        <input type="hidden" class="allform-input" value="12345" />
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Textarea (Multiline Textbox)</label>
+        <textarea class="allform-textarea" placeholder="Write your message here..."></textarea>
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Select (Dropdown)</label>
+        <select class="allform-select">
+          <option value="">-- Choose an option --</option>
+          <option value="opt1">Option 1</option>
+          <option value="opt2">Option 2</option>
+          <option value="opt3">Option 3</option>
+        </select>
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Form Completion (Progress)</label>
+        <progress class="allform-progress" value="40" max="100"></progress>
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Password Strength (Meter)</label>
+        <meter class="allform-meter" value="0.6" min="0" max="1">60%</meter>
+      </div>
+
+      <div class="allform-group">
+        <label class="allform-label">Image (acts like submit)</label>
+        <input type="image" class="allform-input" src="https://via.placeholder.com/80" alt="submit" />
+      </div>
+
+      <div class="allform-actions">
+        <input type="button" class="allform-btn allform-btn-normal" value="Normal Button" />
+        <input type="reset" class="allform-btn allform-btn-reset" value="Reset" />
+        <input type="submit" class="allform-btn allform-btn-submit" value="Submit" />
+      </div>
+
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <div>
+    <p>&copy; 2025 My Component Library. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
 </html>
