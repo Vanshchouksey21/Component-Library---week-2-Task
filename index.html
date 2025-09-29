@@ -15,88 +15,109 @@
 
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f9f9f9, #ececec);
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Subtle radial glow effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 150%;
+      height: 150%;
+      background: radial-gradient(circle at center, rgba(0,119,255,0.15), transparent 70%);
+      z-index: 0;
+    }
+
+    main {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 2rem;
+      z-index: 1;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 2rem;
-      color: #333;
+      color: #1e293b;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
 
     .nav-links {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
     }
 
     .nav-links a {
       text-decoration: none;
-      padding: 1rem 2rem;
-      border-radius: 12px;
-      background: #0077ff;
-      color: #fff;
+      padding: 1rem 2.2rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #0077ff;
       font-size: 1.2rem;
-      font-weight: 500;
+      font-weight: 600;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links a:hover {
-      background: #005fcc;
-      transform: translateY(-4px) scale(1.05);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      background: #0077ff;
+      color: #fff;
+      transform: translateY(-5px) scale(1.07);
+      box-shadow: 0 8px 20px rgba(0, 119, 255, 0.3);
     }
 
     .p {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #666;
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #475569;
     }
 
-
-    footer{
-        width: 100%;
-        margin-top: 40px;
-        padding: 20px;
-            
-        align-items: center;
-        background: #7096bd;
-        color: #475569; 
-        font-size: 14px;
-        border-top: 1px solid #e2e8f0;
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 1.2rem;
+      background: #1e293b;
+      color: #f1f5f9;
+      font-size: 14px;
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Welcome to My Component Library</h1>
+  <main>
+    <h1>🚀 Welcome to My Component Library</h1>
 
-  <div class="nav-links">
-    <a href="./Button/Button.html">🔘 Buttons</a>
-    <a href="./Card/cards.html">🃏 Cards</a>
-    <a href="./Form/Form.html">📝 Forms</a>
-  </div>
+    <div class="nav-links">
+      <a href="./Button/Button.html">🔘 Buttons</a>
+      <a href="./Card/cards.html">🃏 Cards</a>
+      <a href="./Form/Form.html">📝 Forms</a>
+    </div>
 
-  <p class="p">
-    Explore beautiful & interactive UI components built with HTML & CSS ✨
-  </p>
-
+    <p class="p">
+      Explore beautiful & interactive UI components built with HTML & CSS ✨
+    </p>
+  </main>
 
   <footer>
-    <div>
-  <p>&copy; 2025 My Component Library. All rights reserved.</p>
-
-    </div>
-</footer>
-
+    <p>&copy; 2025 My Component Library. All rights reserved.</p>
+  </footer>
 </body>
 </html>

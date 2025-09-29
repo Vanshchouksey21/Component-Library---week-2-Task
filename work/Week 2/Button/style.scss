@@ -341,8 +341,8 @@ button:disabled {
 .icon-wrapper {
   position: relative;
   display: flex;
-  width: 16px; 
-  height: 16px; 
+  width: 16px; /* icon width */
+  height: 16px; /* icon height */
 }
 
 .icon-wrapper i {

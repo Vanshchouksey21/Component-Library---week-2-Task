@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #ececec);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      background: #0077ff;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links a:hover {
+      background: #005fcc;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .p {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+
+    footer{
+        width: 100%;
+        margin-top: 40px;
+        padding: 20px;
+            
+        align-items: center;
+        background: #7096bd;
+        color: #475569; 
+        font-size: 14px;
+        border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Welcome to My Component Library</h1>
+
+  <div class="nav-links">
+    <a href="./Button/Button.html">🔘 Buttons</a>
+    <a href="./Card/cards.html">🃏 Cards</a>
+    <a href="./Form/Form.html">📝 Forms</a>
+  </div>
+
+  <p class="p">
+    Explore beautiful & interactive UI components built with HTML & CSS ✨
+  </p>
+
+
+  <footer>
+    <div>
+  <p>&copy; 2025 My Component Library. All rights reserved.</p>
+
+    </div>
+</footer>
+
+</body>
+</html>
